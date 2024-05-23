@@ -1,0 +1,105 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+#main-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+#calendar-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#calendar-items {
+  align-items: center;
+  background-color: #eef5ff;
+  border-radius: 30px;
+}
+.nav-button {
+  background-color: #a0deff;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+#calendar-header {
+  text-align: center;
+}
+
+#month-year {
+  margin: 0;
+}
+
+#calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  //gap: 5px;
+  max-width: 600px;
+  margin: 20px;
+}
+
+#calendar div {
+  background-color: white;
+  border: 0.5px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  //border-radius: 10px;
+  position: relative;
+}
+
+#calendar div:hover {
+  background-color: #f0f0f5;
+}
+
+#memo-container {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#memo {
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#save-memo {
+  background-color: #5ab2ff;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#save-memo:hover {
+  background-color: #a0deff;
+}
+
+.memo-indicator {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 20px;
+  color: #5ab2ff;
+}
