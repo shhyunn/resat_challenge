@@ -37,7 +37,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
-          path: "day6_carousel"
+          path: "day5&8_cloneCoding"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
