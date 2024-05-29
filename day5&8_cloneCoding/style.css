@@ -1,0 +1,372 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.header-container {
+  display: flex;
+  align-items: center; /* Align items vertically centered */
+  justify-content: space-between; /* Distribute space between items */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+main {
+  align-items: center;
+}
+
+header .logo img {
+  height: 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.auth a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #5ab2ff;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.banner img {
+  width: 48%;
+}
+
+.internships {
+  padding: 20px;
+  /* background-color: #f0f0f0; */
+}
+
+.internships h2 {
+  margin-bottom: 20px;
+}
+
+.internship-list {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 60px;
+}
+
+.texts {
+  padding: 10px;
+}
+.internship-item {
+  display: flex;
+  flex-direction: column; /* Ensures that items within each internship item stack vertically */
+  background-color: white;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.internship-item img {
+  width: 70%;
+  height: auto; /* Ensures the image maintains its aspect ratio */
+  object-fit: cover; /* Ensures the image covers the container */
+  margin-bottom: 10px; /* Space between the image and text */
+}
+.skillup {
+  padding: 20px;
+  /* background-color: #fff; */
+  text-align: center;
+}
+
+.skillup img {
+  width: 100%;
+}
+
+.jobs {
+  padding: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.jobs h2 {
+  margin-bottom: 20px;
+}
+
+.job-list {
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 60px;
+}
+
+.job-item {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  border-radius: 10px; /* Rounded corners */
+  margin-bottom: 20px; /* Space between cards */
+  max-width: 500px; /* Optional: limit the width */
+}
+
+.job-item img {
+  width: 50px; /* Set a fixed width for the logo */
+  height: 50px; /* Set a fixed height for the logo */
+  margin-right: 20px; /* Space between the image and the text */
+  border-radius: 50%; /* Make the logo circular */
+}
+
+.job-details {
+  display: flex;
+  flex-direction: column; /* Stack text elements vertically */
+}
+
+.job-type {
+  color: #888; /* Light gray color for the job type */
+  font-size: 12px; /* Smaller font size */
+  margin: 0; /* Remove default margin */
+}
+
+.job-title {
+  font-size: 16px; /* Larger font size for job title */
+  font-weight: bold; /* Bold font for job title */
+  margin: 5px 0; /* Space above and below */
+}
+
+.company-name {
+  color: #333; /* Darker color for the company name */
+  margin: 5px 0; /* Space above and below */
+}
+
+.job-status {
+  color: #0084ff; /* Blue color for the job status */
+  font-size: 12px; /* Smaller font size */
+  background-color: #e6f7ff; /* Light blue background */
+  padding: 2px 6px; /* Padding around the text */
+  border-radius: 4px; /* Rounded corners */
+  align-self: flex-start; /* Align to the start of the container */
+  margin-top: 5px; /* Space above the job status */
+}
+
+.banner {
+  display: flex;
+  /* justify-content: space-between; */
+  padding: 20px;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+.banner-left,
+.banner-right {
+  flex: 1; /* Make both sides take up equal space */
+  display: flex;
+  justify-content: center; /* Center the content within each flex item */
+  align-items: center; /* Center the content vertically */
+  padding: 10px;
+}
+
+.banner-left img,
+.banner-right img {
+  height: 100%; /* Ensure images have the same height */
+  object-fit: cover; /* Cover the container while maintaining aspect ratio */
+}
+
+.banner img {
+  height: 400px; /* Set a fixed height for both images */
+  width: auto; /* Maintain aspect ratio */
+}
+
+.paddings {
+  display: flex;
+  align-items: center;
+}
+
+.skill-banner {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: center;
+  padding: 30px;
+  background-color: #f6f5f2;
+}
+
+._skill-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-left2 img {
+  width: 100%; /* Ensure the image takes full width of its container */
+  max-width: 400px; /* Optional: set a max-width for the image */
+  height: auto;
+  border-radius: 10px; /* Optional: adds rounded corners to the image */
+}
+
+.banner-right2 {
+  flex: 1; /* Take up remaining space */
+  padding-left: 20px;
+}
+
+/* .banner-right-content {
+  background-color: white;
+} */
+
+.service-launch {
+  color: #0084ff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: inline-block;
+  background-color: #f0f0f0;
+  padding: 2px 10px;
+  border-radius: 12px;
+}
+
+.banner-right2 h2 {
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 0;
+  color: #333;
+}
+
+.mclass {
+  padding: 100px;
+  background-color: white; /* White background for the section */
+}
+
+.mclass h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.mclass p {
+  color: #666;
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.mclass-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns */
+  gap: 20px; /* Gap between items */
+}
+
+.mclass-item {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Ensure content stays within rounded corners */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition on hover */
+}
+
+.mclass-item img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd; /* Separator line below image */
+}
+
+.mclass-item p {
+  padding: 15px;
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.mclass-item:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+footer {
+  background-color: white;
+  padding: 20px 40px;
+  border-top: 1px solid #ddd;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.footer-left {
+  flex: 1;
+}
+
+.footer-left img {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.footer-left p {
+  margin: 5px 0;
+  color: #333;
+  font-size: 14px;
+}
+
+.footer-right {
+  display: flex;
+}
+
+.footer-right ul {
+  list-style: none;
+  padding: 0; /* Removed extra padding */
+  margin: 0; /* Removed extra margin */
+}
+
+.footer-right ul li {
+  margin: 10px 0; /* Adjusted margin to only affect vertical spacing */
+  padding: 10px 0; /* Added padding for top and bottom */
+}
+
+.footer-right ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  font-size: 12px;
+  color: #888;
+  line-height: 1.5;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
+  .footer-left,
+  .footer-right {
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+  }
+}
